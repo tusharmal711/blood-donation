@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import Swal from 'sweetalert2';
-
+import { Link } from 'react-router-dom';
 const Signup = () => {
   const [formData, setFormData] = useState({
     userid: '',
@@ -141,7 +141,7 @@ const Signup = () => {
           </button>
         </form>
         <p className="text-center text-sm text-gray-600 mt-4">
-          Already have an account? <a href="/login" className="text-red-500">Sign In</a>
+          Already have an account? <Link to="/login" className="text-red-500">Sign In</Link>
         </p>
       </div>
     </div>

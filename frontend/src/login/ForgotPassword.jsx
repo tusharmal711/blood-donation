@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
-
+import { Link } from 'react-router-dom';
 const ForgotPassword = () => {
   const [userid, setUserid] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -96,7 +96,7 @@ const ForgotPassword = () => {
 
         <p className="mt-6 text-center text-sm text-gray-600">
           Remembered your password?{' '}
-          <a href="/login" className="text-red-500 hover:underline">Login</a>
+          <Link to="/login" className="text-red-500 hover:underline">Login</Link>
         </p>
       </div>
     </div>
