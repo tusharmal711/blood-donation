@@ -11,7 +11,7 @@ import {
 import Navbar from './Navbar';
 import Home from './Home/Home';
 import Donor_Eligibility from './Donor-Eligibility/Donor_Eligibility';
-import Eligibility_Check from './Eligibility_check/eligibility_Check';
+import Eligibility_Check from './Eligibility_check/Eligibility_Check';
 import Blood_Donor_Basic from './Blood_Donor_Basic/Blood_Donor_Basic';
 import Tips_for_Student from './Blood_Donor_Basic/Tips_for_Student';
 import Blood_type from './Blood_types/Blood_type';
