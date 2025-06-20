@@ -59,8 +59,8 @@ function App() {
            <Route path='/Donate' element={<DonateNow></DonateNow>}></Route>
            <Route path='/Login' element={<Login></Login>}></Route>
            <Route path='/match-results' element={<MatchResults></MatchResults>}></Route>
-           <Route path='/signup' element={<Signup></Signup>}></Route>
-           <Route path='/Forgot-password' element={<ForgotPassword></ForgotPassword>}></Route>
+           <Route exact path='/signup' element={<Signup />}></Route>
+           <Route exact path='/Forgot-password' element={<ForgotPassword />}></Route>
            <Route path='/Login_D' element={<Login_D></Login_D>}></Route>
            <Route path='/forgotpsw_D' element={<Forgotpsw_D></Forgotpsw_D>}></Route>
            <Route path='/DonorProfile' element={<DonorProfile></DonorProfile>}></Route>

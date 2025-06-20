@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import Swal from 'sweetalert2';
-
+import { useNavigate , Link} from 'react-router-dom';
 
 const Login = () => {
   const [userid, setuserid] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-
+const navigate=useNavigate();
   const match = async (e) => {
     e.preventDefault();
     const new_user = {
@@ -83,9 +83,8 @@ const Login = () => {
             </div>
             {/* Forgot Password Option */}
            <div className="text-right mt-2">
-          <a href="/Forgot-password" className="text-sm text-red-500 hover:underline">
-          Forgot password?
-           </a>
+             <Link to="/Forgot-password" className="text-sm text-red-500 hover:underline">Forgot password?</Link>
+        
 </div>
 
           </div>
@@ -112,7 +111,7 @@ const Login = () => {
         <p className="text-center text-sm text-gray-600">
           Don't have an account?{' '}
           <span className="text-red-500 cursor-pointer">
-            <a href="/signup">Sign up</a>
+            <Link to="/signup" >Sign up</Link>
           </span>
         </p>
       </div>
