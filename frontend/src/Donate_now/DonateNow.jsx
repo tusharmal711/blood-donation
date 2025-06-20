@@ -73,7 +73,7 @@ const DonateNow = () => {
     }
   
     try {
-      const res = await fetch('http://localhost:3000/Donate/register', {
+      const res = await fetch('https://blood-donation-dw84.onrender.com/Donate/register', {
         method: 'POST',
         body: formData,
       });

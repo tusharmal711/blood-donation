@@ -27,7 +27,7 @@ const Contact1 = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(new_user)
         };
-        const response = await fetch('http://localhost:3000/Contact/register', requestOptions);
+        const response = await fetch('https://blood-donation-dw84.onrender.com/Contact/register', requestOptions);
         
         const data = await response.json();
         if(data._id!=null){

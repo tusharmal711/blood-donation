@@ -18,7 +18,7 @@ const Forgotpsw_D = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/Donate/reset-password', {
+      const response = await fetch('https://blood-donation-dw84.onrender.com/Donate/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

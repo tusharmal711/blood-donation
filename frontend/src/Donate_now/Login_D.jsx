@@ -19,7 +19,7 @@ const Login_D = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(new_user),
     };
-    const response = await fetch('http://localhost:3000/Donate/connect', requestOptions);
+    const response = await fetch('https://blood-donation-dw84.onrender.com/Donate/connect', requestOptions);
 
     const data = await response.json();
     console.log(new_user);

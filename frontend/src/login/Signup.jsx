@@ -33,7 +33,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/User/register', {
+      const response = await fetch('https://blood-donation-dw84.onrender.com/User/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

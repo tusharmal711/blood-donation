@@ -65,7 +65,7 @@ const DonorProfile = () => {
   const profileImageURL = donor.profileImagePath
     ? (donor.profileImagePath.startsWith('http')
       ? donor.profileImagePath
-      : `http://localhost:3000/uploads/${donor.profileImagePath}`)
+      : `https://blood-donation-dw84.onrender.com/uploads/${donor.profileImagePath}`)
     : '/default-avatar.png';
 
   return (
