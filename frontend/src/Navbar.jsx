@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
         <NavLink to="/" className="flex items-center font-bold text-xl text-black">
-          <img src="./Images/1.png" className="w-[60px] h-[60px] rounded-full absolute bg-none-500 text-white flex items-center justify-center"/>
+          <img src="./Images/1.png" className="w-[60px] h-[57px] rounded-full absolute bg-none-500 text-white flex items-center justify-center"/>
          <p style={{ marginLeft: "3.7rem" }}>BloodLife</p>
         </NavLink>
 
